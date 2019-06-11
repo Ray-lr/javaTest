@@ -1,4 +1,4 @@
-package main;
+package main.entity;
 
 /***
  * @author lirui

@@ -44,15 +44,15 @@ public class UnicodeTest {
     /**
      * unicode编码转中文
      */
-    public static String decodeUnicode(final String dataStr) {
+    private static String decodeUnicode(final String dataStr) {
         int start = 0;
-        int end = 0;
-        final StringBuffer buffer = new StringBuffer();
+        int end;
+        final StringBuilder buffer = new StringBuilder();
         while (start > -1) {
             end = dataStr.indexOf("\\u", start + 2);
-            String charStr = "";
+            String charStr;
             if (end == -1) {
-                charStr = dataStr.substring(start + 2, dataStr.length());
+                charStr = dataStr.substring(start + 2);
             } else {
                 charStr = dataStr.substring(start + 2, end);
             }
