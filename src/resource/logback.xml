@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="30 seconds" debug="false">
+
+    <!--<property name="LOG_PATH" value="c:/jjj"></property>
+    <property name="LOG_FILE" value="app.log"></property>-->
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <logger name="com" level="DEBUG"/>
+    <!--<logger name="root" level="ERROR"/>-->
+    <!--<logger name="com.zgiot.app.server.dataprocessor.WebSocketProcessor" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </logger>-->
+
+</configuration>
