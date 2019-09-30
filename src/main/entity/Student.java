@@ -6,6 +6,8 @@ package main.entity;
 public class Student {
     private Integer id;
     private String name;
+    private double num;
+
 
     public Student() {
     }
@@ -29,6 +31,14 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getNum() {
+        return num;
+    }
+
+    public void setNum(double num) {
+        this.num = num;
     }
 
     @Override
