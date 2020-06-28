@@ -1,4 +1,4 @@
-package main;
+package main.test;
 
 import main.entity.Student;
 

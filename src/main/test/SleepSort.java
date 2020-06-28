@@ -1,4 +1,4 @@
-package main;
+package main.test;
 
 /**
  * 类的描述: 线程的sleep(long ms)方法进行排序
