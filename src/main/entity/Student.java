@@ -16,6 +16,11 @@ public class Student {
         this.id = id;
         this.name = name;
     }
+    public Student(Integer id, String name, int num) {
+        this.id = id;
+        this.name = name;
+        this.num = num;
+    }
 
     public Integer getId() {
         return id;
@@ -46,6 +51,7 @@ public class Student {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", num=" + num +
                 '}';
     }
 }

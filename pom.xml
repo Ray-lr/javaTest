@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.zgiot</groupId>
-    <artifactId>zgiot-app-server</artifactId>
+    <groupId>com.rui</groupId>
+    <artifactId>rui-test</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -83,6 +83,21 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.5</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <!--easy excel-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>2.2.6</version>
+        </dependency>
+
     </dependencies>
 
     <build>
