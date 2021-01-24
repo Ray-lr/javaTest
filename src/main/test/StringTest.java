@@ -1,5 +1,8 @@
 package main.test;
 
+import org.junit.Test;
+import java.util.Arrays;
+
 /***
  * @author lirui
  **/
@@ -10,12 +13,18 @@ public class StringTest {
      * @author : lirui
      * @date : 2019/6/13 9:29
      */
-    public static void main(String[] args) {
-        String s = "123test";
-        args = s.split(",");
+    @Test
+    public void splitTest() {
+        String s = "1,23t,,est,,,,";
+        String[] args = s.split(",");
         System.out.println(args[0]);
         for (String a : args) {
             System.out.println(a);
         }
+    }
+
+    @Test
+    public void getByte() {
+        System.out.println(Arrays.toString("123".getBytes()));
     }
 }
