@@ -1,5 +1,7 @@
 package main.test;
 
+import org.junit.Test;
+
 /***
  * @author lirui
  **/
@@ -17,5 +19,11 @@ public class NumberTest {
         String minute = String.valueOf(c / 60000);
         String second = String.valueOf(c / 1000 % 60);
         System.out.println(minute + "  " + second);
+    }
+    @Test
+    public void giveValue() {
+        int a,b,c;
+        a = b = c = 2;
+        System.out.println(""+a+b+c);
     }
 }

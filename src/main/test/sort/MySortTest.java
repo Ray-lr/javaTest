@@ -47,7 +47,7 @@ public class MySortTest {
     public void quickSortTest() {
         Random random = new Random();
         int[] test = new int[100];
-        for (int i = 0; i < test.length; i++) {
+        for (int i = 0; i < test.length - 1; i++) {
             test[i] = random.nextInt(100);
         }
         System.out.println(Arrays.toString(this.quickSort(test, 0, test.length - 1)));
