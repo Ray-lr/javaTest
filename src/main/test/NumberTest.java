@@ -24,6 +24,15 @@ public class NumberTest {
     public void giveValue() {
         int a,b,c;
         a = b = c = 2;
+        // 222
         System.out.println(""+a+b+c);
+    }
+
+    @Test
+    public void IntegerParseNull() {
+        Object a = null;
+        Integer b = (Integer) a;
+        // null
+        System.out.println(b);
     }
 }
