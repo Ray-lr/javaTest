@@ -1,6 +1,7 @@
 package main.test;
 
 import org.junit.Test;
+
 import java.util.Arrays;
 
 /***
@@ -25,6 +26,7 @@ public class StringTest {
 
     @Test
     public void getByte() {
-        System.out.println(Arrays.toString("123".getBytes()));
+        // [97,65]
+        System.out.println(Arrays.toString("aA".getBytes()));
     }
 }

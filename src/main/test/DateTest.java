@@ -1,7 +1,10 @@
 package main.test;
 
+import org.junit.Test;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.TimeZone;
 
@@ -25,5 +28,17 @@ public class DateTest {
         Long time = end.getTime() - start.getTime();
         String timeStr = hourFormat.format(time);
         System.out.println(timeStr);
+    }
+
+    @Test
+    public void localDataTimeTest() {
+        // 默认格式yyyy-MM-ddTHH:mm:ss.sss
+        LocalDateTime localDateTime = LocalDateTime.parse("2021-03-25T14:12:04.615");
+        LocalDateTime now = LocalDateTime.now();
+        if (localDateTime.isBefore(now)) {
+            System.out.println("true");
+        }
+        // 2021-03-25T14:12:04.615
+        System.out.println(localDateTime);
     }
 }
