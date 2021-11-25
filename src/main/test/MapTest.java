@@ -30,13 +30,26 @@ public class MapTest {
      **/
     private static List<Integer> getValues(Map<Integer, Integer> map) {
         List<Integer> list = new ArrayList<>(map.size());
-        map.put(4,1);
-        map.put(5,5);
+        map.put(4, 1);
+        map.put(5, 5);
         map.forEach((k, v) -> {
             if (k % 2 == 1) {
                 list.add(v);
             }
         });
         return list;
+    }
+
+    /**
+     * @param map: 需要翻转的map
+     * @return : 结果map
+     * @author : lirui
+     * @date :  2021/9/30
+     * @description : 翻转map的key和value
+     **/
+    private static Map<String, String> reverse(Map<String, String> map) {
+        Map<String, String> result = new HashMap<>(map.size());
+        map.forEach((key, value) -> result.put(value, key));
+        return result;
     }
 }
