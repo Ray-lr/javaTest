@@ -26,7 +26,7 @@ public class RectangleMaxAreaTest {
                 right++;
             }
             int tempArea = (right - left + 1) * array[i];
-            max = max < tempArea ? tempArea : max;
+            max = Math.max(max, tempArea);
         }
         System.out.println(max);
     }

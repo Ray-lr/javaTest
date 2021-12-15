@@ -1,4 +1,4 @@
-package main.test.question;
+package main.test.question.arrays;
 
 import java.util.HashMap;
 import java.util.Map;
