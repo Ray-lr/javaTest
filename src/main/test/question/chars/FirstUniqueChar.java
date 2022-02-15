@@ -6,14 +6,14 @@ package main.test.question.chars;
  *  @description : 第一个不重复的字符,返回下标
  *
  ***/
-public class FirstUniqChar {
+public class FirstUniqueChar {
 
     public static void main(String[] args) {
         String s = "stories";
-        System.out.println(firstUniqChar(s));
+        System.out.println(firstUniqueChar(s));
     }
 
-    public static int firstUniqChar(String s) {
+    public static int firstUniqueChar(String s) {
         char[] chars = s.toCharArray();
         outer:
         for (int i = 0; i < s.length(); i++) {
